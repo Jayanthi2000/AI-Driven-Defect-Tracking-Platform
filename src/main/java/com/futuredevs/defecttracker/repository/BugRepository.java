@@ -8,11 +8,13 @@ import java.util.List;
 
 @Repository
 public interface BugRepository extends JpaRepository<Bug, Long> {
-
     List<Bug> findByReportedBy(User user);
     List<Bug> findByAssignedTo(User user);
+    List<Bug> findByAssignedAdmin(User admin);
     List<Bug> findByStatus(Bug.Status status);
     List<Bug> findBySeverity(Bug.Severity severity);
+    List<Bug> findByPriority(Bug.Priority priority);
     long countByStatus(Bug.Status status);
     long countBySeverity(Bug.Severity severity);
+    long countByPriority(Bug.Priority priority);
 }
