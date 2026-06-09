@@ -1,0 +1,65 @@
+export const userProfile = {
+  name: "Jordan Lee",
+  role: "Senior QA Engineer",
+  team: "Platform Stability Team",
+  email: "jordan.lee@futuredevs.io",
+  location: "San Francisco, CA",
+  timezone: "PST (UTC-8)",
+  joined: "March 2022",
+  avatar: "JL",
+  bio: "Passionate about shipping reliable software. Specializing in automated testing, performance profiling, and AI-assisted QA workflows. 8+ years in SaaS platforms.",
+  skills: ["QA Automation", "Performance Testing", "Bug Triage", "CI/CD", "React", "Python", "Jest", "Playwright"],
+  stats: {
+    bugsAssigned: 47,
+    bugsResolved: 38,
+    bugsOpen: 9,
+    commentsPosted: 124,
+    teamsCollaborated: 5,
+    avgResolutionTime: "2.4 days",
+  },
+};
+
+export const profileActivity = [
+  {
+    id: 1,
+    action: "Resolved BUG-104",
+    detail: "Payment gateway timeout — marked resolved after deploy",
+    time: "Today, 10:24 AM",
+    type: "resolved",
+  },
+  {
+    id: 2,
+    action: "Commented on BUG-099",
+    detail: "Added reproduction steps and environment details",
+    time: "Today, 9:07 AM",
+    type: "comment",
+  },
+  {
+    id: 3,
+    action: "Assigned BUG-102",
+    detail: "Memory leak in dashboard module assigned by Sarah Kim",
+    time: "Yesterday, 4:32 PM",
+    type: "assignment",
+  },
+  {
+    id: 4,
+    action: "Escalated BUG-091",
+    detail: "Severity changed from Medium to High after analysis",
+    time: "Yesterday, 2:15 PM",
+    type: "escalation",
+  },
+  {
+    id: 5,
+    action: "Resolved BUG-087",
+    detail: "Login fails after password reset — JWT fix deployed",
+    time: "2 days ago",
+    type: "resolved",
+  },
+  {
+    id: 6,
+    action: "Filed BUG-103",
+    detail: "Duplicate of BUG-087 — AI flagged 92% match",
+    time: "3 days ago",
+    type: "filed",
+  },
+];

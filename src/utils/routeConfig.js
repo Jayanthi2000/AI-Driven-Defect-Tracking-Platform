@@ -1,0 +1,1 @@
+export const ROLE_HOME = { admin: "/admin/dashboard", developer: "/developer/dashboard", tester: "/tester/dashboard", };
